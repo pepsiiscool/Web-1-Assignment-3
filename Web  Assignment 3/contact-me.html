@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="stylesheet/contact-me.css">
+</head>
+
+<body>
+
+    <header class="wrapper">
+        <section>
+          <img src="images/logo.JPEG" alt="Logo" class="logo">
+        </section>
+        <nav class="Mainnavigation">
+            <a href="index.html" tabindex="1"><img src="images/my-home.JPEG" alt="Home"><span>Home</span></a>
+            <a href="about-me.html" tabindex="2"><img src="images/about-me.JPG" alt="About Me"><span>About Me</span></a>
+            <a href="contact-me.html" tabindex="3"><img src="images/contact-me.JPEG" alt="Contact"><span>Contact</span></a>
+          </nav>
+      </header>
+
+    <main class="flex-center">
+        <div class="contact-container">
+            <h2 class="contact-adjustments">Contact Me</h2>
+            <form action="mailto:mmccu061@mtroyal.ca" enctype="multipart/form-data" method="post">
+                <input type="text" name="first_name" placeholder="First Name" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
+                <input type="text" name="last_name" placeholder="Last Name" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Your message" rows="8" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Matthew McCusker.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+</html>

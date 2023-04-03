@@ -1,0 +1,1 @@
+I had issues with my CSS rules working when putting  it  into  my resource folder. 

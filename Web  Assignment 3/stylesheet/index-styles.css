@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/*This line imports the Roboto font from Google Fonts with a weight of 300. */
+
+/* Define the root element styles */
+:root{
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+/*  header start */
+
+/* Style the header wrapper */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222;
+  width: 100%; /* Add this line to make the header take up the full width */
+}
+
+/* Set the size of the logo image */
+.logo {
+  width: 120px;
+}
+
+/* Style the main navigation container */
+.Mainnavigation {
+  display: flex;
+  flex-grow: 0.5;
+  justify-content: space-around;
+}
+
+/* Style the main navigation links and their alignment */
+.Mainnavigation a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Set the size and margin of the images inside the navigation links */
+a img {
+  width: 55px;
+  height: 55px;
+  margin: 2rem;
+}
+
+/*  header end */
+
+/*main content  start*/
+
+/* Style the main content container */
+.main-content {
+  display: flex;
+  align-items: center; /* Aligns the mission statement and the image vertically centered */
+  padding: 1rem;
+}
+
+/* Set the size and margin of the main image */
+.main-image {
+  width: 50%; /* Adjust the width of the image as needed */
+  height: auto;
+  margin-right: 1rem; /* Add some space between the image and the mission statement */
+}
+
+/* Style the mission statement container */
+.mission-statement {
+  display: flex;
+  padding: 10px;
+  background-color:steelblue;
+  border-radius: 2%;
+  align-content: center;
+  flex-grow: 1; /* Allows the mission statement to take up the remaining horizontal space */
+}
+
+/* Set the font and color for the mission statement text */
+.mission-statement p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:floralwhite;
+}
+/*main content  end*/
+
+
+
+
+/* Style the footer container */
+.footer {
+  background-color: #222;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+/* Style the footer content container */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  color: #f1f1f1;
+}
+
+/* Set the font size for the footer text */
+.footer-content p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Remove list styling and set the margin for the footer links container */
+.footer-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set the margin for each footer link item */
+.footer-links li {
+  margin-right: 1.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: cornflowerblue;
+}
+
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .Mainnavigation {
+    justify-content: center;
+  }
+
+  a img {
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .mission-statement {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 1rem;
+  }
+
+  .footer-links li {
+    margin-right: 0.5rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 100px;
+  }
+
+  a img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+
